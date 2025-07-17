@@ -1,0 +1,71 @@
+#datetime-picker {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+#datetime-picker:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+[data-start] {
+  padding: 12px;
+  background-color: rgba(78, 117, 255, 1);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  margin-bottom: 25px;
+}
+
+[data-start]:hover:enabled {
+  background-color: rgba(78, 117, 255, 1);
+}
+
+[data-start]:active:enabled {
+  transform: scale(0.98);
+}
+
+[data-start]:disabled {
+  background-color: rgba(108, 140, 255, 1);
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.field {
+  flex: 1 1 10px;
+  background-color: #f5f7fa;
+  padding: 20px 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
